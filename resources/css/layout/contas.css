@@ -1,0 +1,53 @@
+.contas_main{
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: #f4f4f4;
+}
+
+.contas_content{
+    max-width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.pagina{
+    display: flex;
+    align-items: center;
+}
+
+.pagina_titulo{
+    font-size: 24px;
+    font-weight: bolder;
+    margin-right: 20px;
+}
+
+.pagina_subtitulo{
+    font-size: 14px;
+}
+
+.contas_topo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.contas_btn{
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 25px;
+    background-color: #00272d;
+    transition: ease-in-out 0.2s;
+    color: #f2f2f2
+}
+
+
+
+.contas_btn:hover{
+    transform: scale(1.1);
+}
+
+

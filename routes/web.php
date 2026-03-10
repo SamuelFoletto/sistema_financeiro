@@ -1,0 +1,8 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::resource('conta', App\Http\Controllers\ContaController::class);
+Route::resource('categoria',App\Http\Controllers\CategoriaController::class);
