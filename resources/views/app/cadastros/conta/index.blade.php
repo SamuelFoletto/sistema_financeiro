@@ -13,10 +13,10 @@
             </button>
         </x-slot>
 
-        @include('app.conta.components.table')
+        @include('app.cadastros.conta.components.table')
 
     </x-cadastro-layout>
 
-    @include('app.conta.modals.create')
+    @include('app.cadastros.conta.modals.create')
 
 @endsection

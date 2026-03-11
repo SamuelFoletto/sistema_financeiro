@@ -10,7 +10,7 @@ class TiposPagamentosController extends Controller
     public function index()
     {
         $tipos_pagamentos = TiposPagamento::all();
-        return view('app.tipos_pagamentos.index', ['tipos_pagamentos' => $tipos_pagamentos]);
+        return view('app.cadastros.tipos_pagamentos.index', ['tipos_pagamentos' => $tipos_pagamentos]);
     }
 
     public function store(Request $request)

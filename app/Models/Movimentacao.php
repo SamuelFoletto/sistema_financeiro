@@ -10,11 +10,10 @@ class Movimentacao extends Model
     use SoftDeletes;
     protected $table = 'movimentacoes';
     protected $fillable = [
-        'usuario_id',
         'conta_id',
         'categoria_id',
+        'tipo_id',
         'valor',
-        'tipo',
         'descricao',
         'data',
     ];

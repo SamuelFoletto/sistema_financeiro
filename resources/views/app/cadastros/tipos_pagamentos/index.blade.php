@@ -13,10 +13,10 @@
             </button>
         </x-slot>
 
-        @include('app.tipos_pagamentos.components.table')
+        @include('app.cadastros.tipos_pagamentos.components.table')
 
     </x-cadastro-layout>
 
-    @include('app.tipos_pagamentos.modals.create')
+    @include('app.cadastros.tipos_pagamentos.modals.create')
 
 @endsection

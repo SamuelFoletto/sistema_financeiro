@@ -13,10 +13,10 @@
             </button>
         </x-slot>
 
-        @include('app.categoria.components.table')
+        @include('app.cadastros.categoria.components.table')
 
     </x-cadastro-layout>
 
-    @include('app.categoria.modals.create')
+    @include('app.cadastros.categoria.modals.create')
 
 @endsection

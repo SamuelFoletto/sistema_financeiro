@@ -14,7 +14,7 @@ class ContaController extends Controller
     public function index()
     {
         $contas = Conta::all();
-        return view('app.conta.index', ['contas' => $contas]);
+        return view('app.cadastros.conta.index', ['contas' => $contas]);
     }
 
     public function store(Request $request)
