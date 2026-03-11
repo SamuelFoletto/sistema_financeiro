@@ -1,26 +1,22 @@
 @extends('layout.padrao')
 
 @section('conteudo')
-    <main class="contas_main">
-        <div class="contas_content">
-            <div class="contas_topo">
-                <div class="pagina">
-                    <span class="pagina_titulo">Categorias</span>
-                    <span class="pagina_subtitulo">Cadastro > Categorias</span>
-                </div>
 
+    <x-cadastro-layout
+        titulo="Tipos de pagamentos"
+        subtitulo="Cadastro > Tipos de pagamentos"
+    >
 
-                <button class="contas_btn" data-bs-toggle="modal" data-bs-target="#modalCategoria">
-                    Nova Categoria
-                </button>
+        <x-slot:botao>
+            <button class="contas_btn" data-bs-toggle="modal" data-bs-target="#modalTiposPagamentos">
+                Novo tipo de pagamento
+            </button>
+        </x-slot>
 
-            </div>
+        @include('app.tipos_pagamentos.components.table')
 
-{{--            @include('app.categoria.components.table')--}}
+    </x-cadastro-layout>
 
+    @include('app.tipos_pagamentos.modals.create')
 
-        </div>
-    </main>
-
-{{--    @include('app.categoria.modals.create')--}}
 @endsection

@@ -19,6 +19,7 @@
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="{{route('conta.index')}}">Contas</a></li>
                         <li><a class="dropdown-item" href="{{route('categoria.index')}}">Categorias</a></li>
+                        <li><a class="dropdown-item" href="{{route('tipos_pagamentos.index')}}">Tipos de pagamentos</a></li>
                     </ul>
                 </li>
             </ul>
