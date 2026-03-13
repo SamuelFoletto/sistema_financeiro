@@ -8,3 +8,4 @@ Route::resource('conta', App\Http\Controllers\ContaController::class);
 Route::resource('categoria',App\Http\Controllers\CategoriaController::class);
 Route::resource('tipos_pagamentos', App\Http\Controllers\TiposPagamentosController::class);
 Route::resource('tipos_cobrancas', App\Http\Controllers\TiposCobrancasController::class);
+Route::resource('movimentacoes', App\Http\Controllers\MovimentacoesController::class);

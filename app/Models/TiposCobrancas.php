@@ -12,4 +12,13 @@ class TiposCobrancas extends Model
     protected $fillable = [
         'nome',
     ];
+
+    public function movimentacao(){
+        return $this->hasMany(Movimentacao::class);
+    }
+
+    public function categoria()
+    {
+        return $this->hasMany(Categoria::class);
+    }
 }

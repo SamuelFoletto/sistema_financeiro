@@ -13,4 +13,8 @@ class Conta extends Model
         'nome',
         'saldo'
     ];
+
+    public function movimentacao(){
+        return $this->hasMany(Movimentacao::class);
+    }
 }

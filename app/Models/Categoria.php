@@ -10,8 +10,14 @@ class Categoria extends Model
     use SoftDeletes;
     protected $table = 'categoria';
     protected $fillable = [
-        'usuario_id',
         'nome',
         'tipo'
     ];
+
+    public function movimentacao(){
+        return $this->hasMany(Movimentacao::class);
+    }
+
+
 }
+
